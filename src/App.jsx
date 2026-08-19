@@ -430,12 +430,7 @@ function SideMessage({ caught, total, phase }) {
   if (phase === 'roomView') {
     return (
       <div className="message-enter flex flex-col items-center justify-center text-center px-4 py-6 h-full">
-        <p className="font-romantic text-3xl sm:text-4xl md:text-5xl text-pink-200 leading-tight mb-3">
-          Room time
-        </p>
-        <p className="font-romantic text-xl sm:text-2xl text-pink-100/90 leading-tight mb-2">
-          (Room color matches your door)
-        </p>
+        
         <div className="mt-4 text-5xl sm:text-6xl">🏰</div>
       </div>
     )
@@ -465,11 +460,11 @@ function SideMessage({ caught, total, phase }) {
           ጋብቻ 💍
         </p>
         <p className="font-body text-pink-200/80 text-sm sm:text-base mb-6">
-          Preparing your wedding screen... (tell me what you want here)
+          Preparing 
         </p>
         <div className="heart-burst text-7xl sm:text-8xl mb-6 animate-pulse-soft">✨</div>
         <p className="font-romantic text-xl sm:text-2xl text-pink-200/90 leading-relaxed max-w-xs">
-          Coming next
+          Coming 
         </p>
       </div>
     )
@@ -1147,7 +1142,7 @@ export default function App() {
                           />
                           <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 text-center">
                             <p className="font-romantic text-3xl text-pink-100">{theme.label}</p>
-                            <p className="font-body text-white/75 text-xs">click to enter</p>
+                            <p className="font-body text-white/75 text-xs">ንኪው</p>
                           </div>
                         </button>
                       )
@@ -1294,7 +1289,7 @@ export default function App() {
               className="absolute top-4 right-4 px-5 py-2 rounded-full bg-black/30 text-white touch-manipulation pointer-events-auto"
               style={{ zIndex: 9999 }}
             >
-            በር
+              በር              
             </button>
 
             <button
@@ -1304,7 +1299,7 @@ export default function App() {
               className="absolute top-4 left-4 px-4 py-2 rounded-full bg-black/25 text-white touch-manipulation pointer-events-auto"
               style={{ zIndex: 9999 }}
             >
-              Skip
+              S
             </button>
 
             <audio ref={slideshowAudioRef} src={PREPARATION_MUSIC_URL} loop preload="auto" />
@@ -1399,7 +1394,7 @@ export default function App() {
               className="absolute top-4 left-4 px-4 py-2 rounded-full bg-black/25 text-white touch-manipulation pointer-events-auto"
               style={{ zIndex: 9999 }}
             >
-              Skip
+              S
             </button>
 
             <audio ref={slideshowAudioRef} src={WEDDING_MUSIC_URL} loop preload="auto" />
@@ -1459,7 +1454,7 @@ export default function App() {
               className="absolute top-4 left-4 px-4 py-2 rounded-full bg-black/25 text-white touch-manipulation pointer-events-auto"
               style={{ zIndex: 9999 }}
             >
-              Skip
+              S
             </button>
 
             <audio ref={slideshowAudioRef} src={WEDDING_MUSIC_URL} loop preload="auto" />
@@ -1480,7 +1475,7 @@ export default function App() {
                     onPointerDown={(e) => { e.stopPropagation(); goToDoors(); }}
                     className="px-6 py-3 rounded-full bg-black/40 text-white touch-manipulation"
                   >
-                    ወደ በሮቹ ተመለሽ
+                    በር
                   </button>
                 </div>
               </div>
