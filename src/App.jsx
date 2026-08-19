@@ -213,7 +213,7 @@ function Door1ProposalRoom({ onBack, onYes, onSkip, registerSkip }) {
               <img
                 src={MARRY_CARD_URL}
                 alt="Will you marry me postcard"
-                className="w-full h-[360px] sm:h-[500px] object-contain bg-black/35"
+                className="proposal-card-image w-full object-contain bg-black/35"
               />
               <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 bg-gradient-to-t from-black/85 via-black/40 to-transparent">
                 <div className="relative">
@@ -565,6 +565,9 @@ export default function App() {
     const ambientPhases = ['playing', 'complete', 'final', 'doorMenu']
 
     if (ambientPhases.includes(phase)) {
+      if (audio && audio.src !== AMBIENT_MUSIC_URL) {
+        audio.src = AMBIENT_MUSIC_URL
+      }
       playAmbientMusic()
       return
     }

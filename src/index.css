@@ -310,6 +310,11 @@ button {
   filter: saturate(1.08) contrast(1.03);
 }
 
+.proposal-card-image {
+  height: min(68vh, 720px);
+  min-height: 500px;
+}
+
 .memory-stage::after {
   content: '';
   position: absolute;
@@ -401,6 +406,11 @@ button:focus-visible {
 
   .slideshow-img {
     height: 100%;
+  }
+
+  .proposal-card-image {
+    height: min(62vh, 520px);
+    min-height: 400px;
   }
 
   .big-yes {
