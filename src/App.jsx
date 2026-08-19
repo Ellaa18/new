@@ -452,7 +452,7 @@ function SideMessage({ caught, total, phase }) {
         </p>
         <div className="heart-burst text-7xl sm:text-8xl mb-6 animate-pulse-soft">💍</div>
         <p className="font-romantic text-xl sm:text-2xl text-pink-200/90 leading-relaxed max-w-xs">
-         ጋብቻችን እውን ነው
+         ጋብቻችን እውን ነው።
         </p>
       </div>
     )
@@ -524,7 +524,7 @@ function SideMessage({ caught, total, phase }) {
         ← ባስከቱን አንቀሳቅሽው የኔ ፍቅር →
       </p>
       <p className="font-body text-pink-200/40 text-xs mt-4 sm:hidden">
-        touch & drag the basket
+        ← ባስከቱን አንቀሳቅሽው የኔ ፍቅር →
       </p>
     </div>
   )
@@ -1202,10 +1202,7 @@ export default function App() {
                           <p className="font-romantic text-2xl sm:text-3xl text-white mb-3">
                             Door {selectedDoor} placeholder
                           </p>
-                          <p className="font-body text-white/85 text-sm sm:text-base max-w-xl">
-                            Tell me what should be inside each door (Door 1 / 2 / 3), and I’ll replace this section with
-                            your exact content.
-                          </p>
+                          
                         </div>
                         <div className="flex-1">
                           <div className="rounded-2xl bg-black/25 border border-white/15 p-5 sm:p-6">
@@ -1253,7 +1250,7 @@ export default function App() {
                             touch-manipulation
                           "
                         >
-                          Back to doors
+                          በር
                         </button>
                         <button
                           type="button"
@@ -1297,7 +1294,7 @@ export default function App() {
               className="absolute top-4 right-4 px-5 py-2 rounded-full bg-black/30 text-white touch-manipulation pointer-events-auto"
               style={{ zIndex: 9999 }}
             >
-              ወደ በሮቹ ተመለሽ
+            በር
             </button>
 
             <button
@@ -1370,7 +1367,7 @@ export default function App() {
                       onPointerDown={(e) => { e.stopPropagation(); goToDoors(); }}
                       className="px-6 py-3 rounded-full bg-black/40 text-white touch-manipulation"
                     >
-                      ወደ በሮቹ ተመለሽ
+                      በር
                     </button>
                   </div>
               </div>
@@ -1392,7 +1389,7 @@ export default function App() {
               className="absolute top-4 right-4 px-5 py-2 rounded-full bg-black/30 text-white touch-manipulation pointer-events-auto"
               style={{ zIndex: 9999 }}
             >
-              ወደ በሮቹ ተመለሽ
+              በር
             </button>
 
             <button
@@ -1430,7 +1427,7 @@ export default function App() {
                     onPointerDown={(e) => { e.stopPropagation(); goToDoors(); }}
                     className="px-7 py-3 rounded-full bg-black/40 border border-white/20 text-white touch-manipulation shadow-lg shadow-black/20"
                   >
-                    ወደ በሮቹ ተመለሽ
+                    በር
                   </button>
                 </div>
               </div>
@@ -1452,7 +1449,7 @@ export default function App() {
               className="absolute top-4 right-4 px-5 py-2 rounded-full bg-black/30 text-white touch-manipulation pointer-events-auto"
               style={{ zIndex: 9999 }}
             >
-              ወደ በሮቹ ተመለሽ
+              በር
             </button>
 
             <button
