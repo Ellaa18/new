@@ -170,7 +170,7 @@ function Door1ProposalRoom({ onBack, onYes, onSkip, registerSkip }) {
           z-50
         "
       >
-        ወደ በር ተመለስ
+      በር
       </button>
       {onSkip && (
         <button
@@ -187,7 +187,7 @@ function Door1ProposalRoom({ onBack, onYes, onSkip, registerSkip }) {
             z-50
           "
         >
-          Skip
+          S
         </button>
       )}
 
@@ -489,9 +489,9 @@ function SideMessage({ caught, total, phase }) {
 
   return (
     <div className="flex flex-col items-center justify-center text-center px-4 py-6 h-full">
-      <p className="font-romantic text-2xl sm:text-3xl text-pink-300/70 mb-1">ለ ህሊና</p>
+      
       <p className="font-romantic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-pink-100 leading-tight mb-6 animate-float">
-        ልቤን እንዳለ ውሰጅው።
+        ለ ህሊና ልቤን እንዳለ ውሰጅው።
       </p>
       <div className="flex gap-1.5 sm:gap-2 flex-wrap justify-center max-w-[200px] mb-4">
         {Array.from({ length: total }, (_, i) => (
@@ -1002,7 +1002,7 @@ export default function App() {
                     touch-manipulation
                   "
                 >
-                  ወደ በሮቹ ተመለሽ
+                  በር
                 </button>
                 <button
                   type="button"
@@ -1036,7 +1036,7 @@ export default function App() {
                   touch-manipulation
                 "
               >
-                ወደ በሮቹ ተመለሽ 
+                በር 
               </button>
             )}
           </aside>
