@@ -1357,17 +1357,7 @@ export default function App() {
                 ) : (
                   <div className="text-white/70">የኔ ጣፋጭ አፈቅርሻልሁ...</div>
                 )}
-                  {/* Always show a clear Back button at the bottom for touch users */}
-                  <div className="mt-6 flex justify-center">
-                    <button
-                      type="button"
-                      onClick={goToDoors}
-                      onPointerDown={(e) => { e.stopPropagation(); goToDoors(); }}
-                      className="px-6 py-3 rounded-full bg-black/40 text-white touch-manipulation"
-                    >
-                      በር
-                    </button>
-                  </div>
+                  
               </div>
             </div>
           </div>
