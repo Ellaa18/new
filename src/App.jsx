@@ -452,7 +452,7 @@ function SideMessage({ caught, total, phase }) {
         </p>
         <div className="heart-burst text-7xl sm:text-8xl mb-6 animate-pulse-soft">💍</div>
         <p className="font-romantic text-xl sm:text-2xl text-pink-200/90 leading-relaxed max-w-xs">
-          Merry me... accepted!
+         ጋብቻችን እውን ነው
         </p>
       </div>
     )
@@ -1082,7 +1082,7 @@ export default function App() {
       {/* Door / room overlay */}
       {(phase === 'doorMenu' || phase === 'roomView') && (
         <div
-          className="absolute inset-0 z-50 flex items-center justify-center px-4"
+          className="overlay-scroll absolute inset-0 z-50 flex items-center justify-center px-4"
           style={{
             background: 'radial-gradient(circle at 50% 20%, rgba(255,105,180,0.18) 0%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.8) 100%)',
           }}
@@ -1284,7 +1284,7 @@ export default function App() {
       {/* Slideshow and post-yes flow */}
       {phase === 'slideshow' && (
         <div
-          className="absolute inset-0 z-50 flex items-center justify-center px-4"
+          className="overlay-scroll absolute inset-0 z-50 flex items-center justify-center px-4"
           style={{
             background: 'radial-gradient(circle at 50% 20%, rgba(255,105,180,0.12) 0%, rgba(0,0,0,0.7) 55%)',
           }}
@@ -1381,7 +1381,7 @@ export default function App() {
 
       {phase === 'weddingDay' && (
         <div
-          className="absolute inset-0 z-60 flex items-center justify-center px-4"
+          className="overlay-scroll absolute inset-0 z-60 flex items-center justify-center px-4"
           style={{ background: 'radial-gradient(circle at 50% 20%, rgba(255,105,180,0.14) 0%, rgba(0,0,0,0.8) 60%)' }}
         >
           <div className="w-full max-w-4xl text-center relative">
@@ -1441,7 +1441,7 @@ export default function App() {
 
       {phase === 'weddingCard' && (
         <div
-          className="absolute inset-0 z-60 flex items-center justify-center px-4"
+          className="overlay-scroll absolute inset-0 z-60 flex items-center justify-center px-4"
           style={{ background: 'radial-gradient(circle at 50% 20%, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.0) 100%)' }}
         >
           <div className="w-full max-w-4xl text-center relative">
